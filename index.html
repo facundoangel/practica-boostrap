@@ -14,9 +14,9 @@
   <body>
     
     <!--------------------------------------NAVBAR---------------------------------------->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#">Framework Js</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -35,7 +35,7 @@
             </ul>
             <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
+              <button class="btn btn-light" type="submit">Search</button>
             </form>
           </div>
         </div>
@@ -45,35 +45,35 @@
 
 
       <!---------------------------------SLIDER--------------------------------------->
-      <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators text-white">
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner ">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src="./img/bg-banner.jpg" class="d-block w-100 img-fluid" alt="...">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <img src="./img/bg-banner-1.jpg" class="d-block w-100 img-fluid" alt="...">
             <div class="carousel-caption d-none d-md-block mb-5">
-              <h1>First slide label</h1>
-              <p>Some representative placeholder content for the first slide.</p>
-              <button type="button" class="btn btn-primary">Learn More</button>
+              <h1 class="h2">Encuentra toda la documentación <br> sobre Angular</h1>
+              <p>Utiliza este popular framework nada mas y nada menos que creado por el equipo de Google.</p>
+              <a href="https://angular.io/" target="_blank"><button type="button" class="btn btn-primary">Ver mas</button></a>
             </div>
           </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="./img/bg-banner.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="./img/bg-banner-2.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block mb-5">
-              <h1>Second slide label</h1>
-              <p>Some representative placeholder content for the second slide.</p>
-              <button type="button" class="btn btn-primary">Learn More</button>
+              <h1 class="h2">Encuentra toda la documentación <br> sobre React</h1>
+              <p>Utiliza el framework de javascript mas usado en el desarrollo web.</p>
+              <a href="https://en.reactjs.org/" target="_blank"><button type="button" class="btn btn-primary">Ver mas</button></a>
             </div>
           </div>
-          <div class="carousel-item">
-            <img src="./img/bg-banner.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="./img/bg-banner-3.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block mb-5">
-              <h1>Third slide label</h1>
-              <p>Some representative placeholder content for the third slide.</p>
-              <button type="button" class="btn btn-primary">Learn More</button>
+              <h1 class="h2">Encuentra toda la documentación <br>sobre Vue.Js</h1>
+              <p>Utiliza uno de los framework de mayor crecimiento de los ultimos años.</p>
+              <a href="https://vuejs.org/" target="_blank"><button type="button" class="btn btn-primary">Ver mas</button></a>
             </div>
           </div>
         </div>
@@ -86,6 +86,7 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+  
 
 
 
@@ -94,25 +95,26 @@
 
 
       <!---------------------------------SECTION 1--------------------------------------->
-      <div class="container my-5">
-          <div class="row">
-              <div class="col-4 d-flex flex-column align-items-center">
-                  <div class="circle rounded-circle"></div>
-                  <h2 class="display-3 fs-2"><strong>Heading</strong></h2>
-                  <p>this is the first parraph</p>
-                  <button type="button" class="btn btn-secondary">view details</button>
+      <div class="container my-5" style="margin-top: 150px!important;">
+        <h3 class="text-center my-5 pt-4">VENTAJAS DE UTILIZAR UN FRAMEWORK DE JAVASCRIPT</h3>
+          <div class="row text-center">
+              <div class="col-4 d-flex flex-column align-items-center px-4">
+                <img class="img img-fluid circle rounded-circle my-3 shadow-lg" src="./img/icono-feature-1.jpg" alt="icono-feature">
+                  <h2 class="display-3 fs-2"><strong>Mayor velocidad de desarrollo</strong></h2>
+                  <p>Una de las principales ventajas del uso de framework es el aumento de la velocidad a la hora de programar. Estos entornos de programación incluyen la opción de realizar tareas comunes de la programación de forma automatizada (como la creación de un botón o una ventana emergente).</p>
+                  <button type="button" class="btn btn-secondary">Ver Detalles</button>
               </div>
-              <div class="col-4  d-flex flex-column align-items-center">
-                <div class="circle rounded-circle"></div>
-                <h2 class="display-3 fs-2"><strong>Heading</strong></h2>
-                <p>this is the first parraph</p>
-                <button type="button" class="btn btn-secondary">view details</button>
+              <div class="col-4  d-flex flex-column align-items-center px-4">
+                <img class="img img-fluid circle rounded-circle my-3 shadow-lg" src="./img/icono-feature-2.jpg" alt="icono-feature">
+                <h2 class="display-3 fs-2"><strong>Menor posibilidad de cometer errores</strong></h2>
+                <p>A la hora de programar es habitual cometer errores de distinto tipo (por ejemplo, de sintaxis). Con el uso de un framework este tipo de errores se elimina o minimiza, consiguiendo reducir todo el tiempo necesario para encontrarlos y eliminarlos.</p>
+                <button type="button" class="btn btn-secondary">Ver Detalles</button>
               </div>
-              <div class="col-4  d-flex flex-column align-items-center">
-                <div class="circle rounded-circle"></div>
-                <h2 class="display-3 fs-2"><strong>Heading</strong></h2>
-                <p>this is the first parraph</p>
-                <button type="button" class="btn btn-secondary">view details</button>
+              <div class="col-4  d-flex flex-column align-items-center px-4">
+                <img class="img img-fluid circle rounded-circle my-3 shadow-lg" src="./img/icono-feature-3.jpg" alt="icono-feature">
+                <h2 class="display-3 fs-2"><strong>Facilita la colaboracion</strong></h2>
+                <p>Los proyectos de desarrollo web o software requieren de la participación de distintos programadores o incluso, de un equipo de desarrollo. Sin utilizar un framework que aportase una estructura, unos estándares, y otra serie de normas, el esfuerzo necesario sería mucho mayor para que los distintos miembros del equipo pudiesen entender los códigos y trabajar de forma conjunta.</p>
+                <button type="button" class="btn btn-secondary">Ver Detalles</button>
               </div>
           </div>
       </div>
@@ -120,7 +122,21 @@
 
 
 
-
+      <!---------------------------------SECTION 2--------------------------------------->
+      <div class="container-fluid bg-primary" style="margin-top: 150px!important;">
+        <div class="container text-white">
+          <div class="row">
+            <div class="col-7 d-flex flex-column justify-content-center pe-5">
+              <h2 class="my-4">¿Qué es un framework de javascript?</h2>
+              <p>Los frameworks se construyen sobre lenguajes de programación para acelerar los procesos y desarrollar herramientas específicas. Gracias a ellos, se pueden ahorrar grandes cantidades de tiempo y costes.</p>
+              <p>Cuando hablamos un framework JavaScript estamos hablando de una biblioteca que nos proporciona unas plantillas preconstruida y código JavaScript preescrito que nos van a facilitar el desarrollo de nuestra aplicación.</p>
+            </div>
+            <div class="col-5">
+              <img id="img-section-2" src="./img/img-section-2.png" alt="img-section-2">
+            </div>
+          </div>
+        </div>
+      </div>
 
 
 
