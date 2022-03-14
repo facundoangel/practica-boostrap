@@ -5,88 +5,91 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap and CSS -->
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/custom.css">
 
-    <title>Hello, world!</title>
+    <title>Practica bootstrap - argentina programa</title>
   </head>
   <body>
     
     <!--------------------------------------NAVBAR---------------------------------------->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Framework Js</a>
+        <div class="container-fluid py-1">
+          <a class="navbar-brand display-1 fs-3" href="#">Framework Js</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link active" aria-current="page" href="#que-es">¿Qué es?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#f-o-l">Framework o librería</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#popularidad">Popularidad</a>
               </li>
               
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li>
             </ul>
             <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-light" type="submit">Search</button>
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-light" type="submit">Buscar</button>
             </form>
           </div>
         </div>
-      </nav>
+    </nav>
 
 
 
 
-      <!---------------------------------SLIDER--------------------------------------->
-      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner ">
-          <div class="carousel-item active" data-bs-interval="5000">
-            <img src="./img/bg-banner-1.jpg" class="d-block w-100 img-fluid" alt="...">
-            <div class="carousel-caption d-none d-md-block mb-5">
-              <h1 class="h2">Encuentra toda la documentación <br> sobre Angular</h1>
-              <p>Utiliza este popular framework nada mas y nada menos que creado por el equipo de Google.</p>
-              <a href="https://angular.io/" target="_blank"><button type="button" class="btn btn-primary">Ver mas</button></a>
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="5000">
-            <img src="./img/bg-banner-2.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block mb-5">
-              <h1 class="h2">Encuentra toda la documentación <br> sobre React</h1>
-              <p>Utiliza el framework de javascript mas usado en el desarrollo web.</p>
-              <a href="https://en.reactjs.org/" target="_blank"><button type="button" class="btn btn-primary">Ver mas</button></a>
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="5000">
-            <img src="./img/bg-banner-3.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block mb-5">
-              <h1 class="h2">Encuentra toda la documentación <br>sobre Vue.Js</h1>
-              <p>Utiliza uno de los framework de mayor crecimiento de los ultimos años.</p>
-              <a href="https://vuejs.org/" target="_blank"><button type="button" class="btn btn-primary">Ver mas</button></a>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+    <!---------------------------------SLIDER--------------------------------------->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
-  
+      <div class="carousel-inner ">
+        <div class="carousel-item active" data-bs-interval="5000">
+          <img src="./img/bg-banner-1.jpg" class="d-block w-100 img-fluid" alt="...">
+          <div class="carousel-caption d-none d-md-block mb-5">
+            <h1 class="h2">Encuentra toda la documentación <br> sobre Angular</h1>
+            <p>Utiliza este popular framework nada mas y nada menos que creado por el equipo de Google.</p>
+            <a href="https://angular.io/" target="_blank"><button type="button" class="btn btn-primary">Ver mas</button></a>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="./img/bg-banner-2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block mb-5">
+            <h1 class="h2">Encuentra toda la documentación <br> sobre React</h1>
+            <p>Utiliza el framework de javascript mas usado en el desarrollo web.</p>
+            <a href="https://en.reactjs.org/" target="_blank"><button type="button" class="btn btn-primary">Ver mas</button></a>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="./img/bg-banner-3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block mb-5">
+            <h1 class="h2">Encuentra toda la documentación <br>sobre Vue.Js</h1>
+            <p>Utiliza uno de los framework de mayor crecimiento de los ultimos años.</p>
+            <a href="https://vuejs.org/" target="_blank"><button type="button" class="btn btn-primary">Ver mas</button></a>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    
 
 
 
@@ -94,86 +97,101 @@
 
 
 
-      <!---------------------------------SECTION 1--------------------------------------->
-      <div class="container my-5" style="margin-top: 150px!important;">
-        <h3 class="text-center my-5 pt-4">VENTAJAS DE UTILIZAR UN FRAMEWORK DE JAVASCRIPT</h3>
-          <div class="row text-center">
-              <div class="col-12 col-md-4 d-flex flex-column align-items-center p-5">
-                <img class="img img-fluid circle rounded-circle my-3 shadow-lg" src="./img/icono-feature-1.jpg" alt="icono-feature">
-                  <h2 class="display-3 fs-2"><strong>Mayor velocidad de desarrollo</strong></h2>
-                  <p>Una de las principales ventajas del uso de framework es el aumento de la velocidad a la hora de programar. Estos entornos de programación incluyen la opción de realizar tareas comunes de la programación de forma automatizada (como la creación de un botón o una ventana emergente).</p>
-                  <button type="button" class="btn btn-secondary">Ver Detalles</button>
-              </div>
-              <div class="col-12 col-md-4  d-flex flex-column align-items-center p-5"">
-                <img class="img img-fluid circle rounded-circle my-3 shadow-lg" src="./img/icono-feature-2.jpg" alt="icono-feature">
-                <h2 class="display-3 fs-2"><strong>Menor posibilidad de cometer errores</strong></h2>
-                <p>A la hora de programar es habitual cometer errores de distinto tipo (por ejemplo, de sintaxis). Con el uso de un framework este tipo de errores se elimina o minimiza, consiguiendo reducir todo el tiempo necesario para encontrarlos y eliminarlos.</p>
+    <!---------------------------------SECTION 1--------------------------------------->
+    <div class="container my-5" style="margin-top: 150px!important;">
+      <h3 class="text-center my-5 pt-4">VENTAJAS DE UTILIZAR UN FRAMEWORK DE JAVASCRIPT</h3>
+        <div class="row text-center">
+            <div class="col-12 col-md-4 d-flex flex-column align-items-center p-5">
+              <img class="img img-fluid circle rounded-circle my-3 shadow-lg" src="./img/icono-feature-1.jpg" alt="icono-feature">
+                <h2 class="display-3 fs-2"><strong>Mayor velocidad de desarrollo</strong></h2>
+                <p>Una de las principales ventajas del uso de framework es el aumento de la velocidad a la hora de programar. Estos entornos de programación incluyen la opción de realizar tareas comunes de la programación de forma automatizada (como la creación de un botón o una ventana emergente).</p>
                 <button type="button" class="btn btn-secondary">Ver Detalles</button>
-              </div>
-              <div class="col-12 col-md-4  d-flex flex-column align-items-center p-5"">
-                <img class="img img-fluid circle rounded-circle my-3 shadow-lg" src="./img/icono-feature-3.jpg" alt="icono-feature">
-                <h2 class="display-3 fs-2"><strong>Facilita la colaboracion</strong></h2>
-                <p>Los proyectos de desarrollo web o software requieren de la participación de distintos programadores o incluso, de un equipo de desarrollo. Sin utilizar un framework que aportase una estructura, unos estándares, y otra serie de normas, el esfuerzo necesario sería mucho mayor para que los distintos miembros del equipo pudiesen entender los códigos y trabajar de forma conjunta.</p>
-                <button type="button" class="btn btn-secondary">Ver Detalles</button>
-              </div>
+            </div>
+            <div class="col-12 col-md-4  d-flex flex-column align-items-center p-5"">
+              <img class="img img-fluid circle rounded-circle my-3 shadow-lg" src="./img/icono-feature-2.jpg" alt="icono-feature">
+              <h2 class="display-3 fs-2"><strong>Menor posibilidad de cometer errores</strong></h2>
+              <p>A la hora de programar es habitual cometer errores de distinto tipo (por ejemplo, de sintaxis). Con el uso de un framework este tipo de errores se elimina o minimiza, consiguiendo reducir todo el tiempo necesario para encontrarlos y eliminarlos.</p>
+              <button type="button" class="btn btn-secondary">Ver Detalles</button>
+            </div>
+            <div class="col-12 col-md-4  d-flex flex-column align-items-center p-5"">
+              <img class="img img-fluid circle rounded-circle my-3 shadow-lg" src="./img/icono-feature-3.jpg" alt="icono-feature">
+              <h2 class="display-3 fs-2"><strong>Facilita la colaboracion</strong></h2>
+              <p>Los proyectos de desarrollo web o software requieren de la participación de distintos programadores o incluso, de un equipo de desarrollo. Sin utilizar un framework que aportase una estructura, unos estándares, y otra serie de normas, el esfuerzo necesario sería mucho mayor para que los distintos miembros del equipo pudiesen entender los códigos y trabajar de forma conjunta.</p>
+              <button type="button" class="btn btn-secondary">Ver Detalles</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!---------------------------------SECTION 2--------------------------------------->
+    <div id="que-es" class="container-fluid bg-primary  py-4" style="margin-top: 150px!important;">
+      <div class="container text-white">
+        <div class="row">
+          <div class="col-12 col-md-7 d-flex flex-column justify-content-center pe-5 order-2 order-md-1">
+            <h2 class="my-4">¿Qué es un framework de javascript?</h2>
+            <p>Los frameworks se construyen sobre lenguajes de programación para acelerar los procesos y desarrollar herramientas específicas. Gracias a ellos, se pueden ahorrar grandes cantidades de tiempo y costes.</p>
+            <p>Cuando hablamos un framework JavaScript estamos hablando de una biblioteca que nos proporciona unas plantillas preconstruida y código JavaScript preescrito que nos van a facilitar el desarrollo de nuestra aplicación.</p>
           </div>
-      </div>
-
-
-
-
-      <!---------------------------------SECTION 2--------------------------------------->
-      <div class="container-fluid bg-primary  py-4" style="margin-top: 150px!important;">
-        <div class="container text-white">
-          <div class="row">
-            <div class="col-12 col-md-7 d-flex flex-column justify-content-center pe-5 order-2 order-md-1">
-              <h2 class="my-4">¿Qué es un framework de javascript?</h2>
-              <p>Los frameworks se construyen sobre lenguajes de programación para acelerar los procesos y desarrollar herramientas específicas. Gracias a ellos, se pueden ahorrar grandes cantidades de tiempo y costes.</p>
-              <p>Cuando hablamos un framework JavaScript estamos hablando de una biblioteca que nos proporciona unas plantillas preconstruida y código JavaScript preescrito que nos van a facilitar el desarrollo de nuestra aplicación.</p>
-            </div>
-            <div class="col-12 col-md-5 order-1 order-md-2">
-              <img class="img-fluid" src="./img/img-section-2.png" alt="img-section-2">
-            </div>
+          <div class="col-12 col-md-5 order-1 order-md-2">
+            <img class="img-fluid" src="./img/img-section-2.png" alt="img-section-2">
           </div>
         </div>
       </div>
+    </div>
 
 
 
 
-      <!---------------------------------SECTION 3--------------------------------------->
-      <div class="container-fluid  py-4">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-5">
-              <img class="img-fluid" src="./img/img-section-3.png" alt="img-section-2">
-            </div>
-            <div class="col-12 col-md-7 d-flex flex-column justify-content-center p-5">
-              <h2 class="my-4">¿Framework o librería?</h2>
-              <p>Para comenzar queremos expresar que algunas de las alternativas que vamos a tratar están consideradas como frameworks y otras como librerías o micro-librerías.</p>
-              <p>La diferencia puede ser sustancial, porque generalmente el alcance y posibilidades son diferentes. Pero lo cierto es que con todas las herramientas podremos llegar al mismo punto. La diferencia es que un framework nos ofrece un completo set de utilidades y características, mientras que en una librería lo tenemos que montar por nuestra cuenta, con la suma de diversas bibliotecas de código distintas.</p>
-              <p>El framework por tanto nos permite un desarrollo más homogéneo, ya que marca una línea muy definida de trabajo, lo que suele ser interesante en proyectos con equipos de desarrollo mayores. La librería permite una personalización mucho más detallada de los flujos de desarrollo, optimización y adaptabilidad, por lo que muchas veces es preferida por las personas que les gusta tomar sus propias decisiones.</p>
-            </div>
+    <!---------------------------------SECTION 3--------------------------------------->
+    <div id="f-o-l" class="container-fluid  py-3" style="margin-top: 100px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-5">
+            <img class="img-fluid" src="./img/img-section-3.png" alt="img-section-2">
+          </div>
+          <div class="col-12 col-md-7 d-flex flex-column justify-content-center p-5">
+            <h2 class="my-4">¿Framework o librería?</h2>
+            <p>Para comenzar queremos expresar que algunas de las alternativas que vamos a tratar están consideradas como frameworks y otras como librerías o micro-librerías.</p>
+            <p>La diferencia puede ser sustancial, porque generalmente el alcance y posibilidades son diferentes. Pero lo cierto es que con todas las herramientas podremos llegar al mismo punto. La diferencia es que un framework nos ofrece un completo set de utilidades y características, mientras que en una librería lo tenemos que montar por nuestra cuenta, con la suma de diversas bibliotecas de código distintas.</p>
+            <p>El framework por tanto nos permite un desarrollo más homogéneo, ya que marca una línea muy definida de trabajo, lo que suele ser interesante en proyectos con equipos de desarrollo mayores. La librería permite una personalización mucho más detallada de los flujos de desarrollo, optimización y adaptabilidad, por lo que muchas veces es preferida por las personas que les gusta tomar sus propias decisiones.</p>
           </div>
         </div>
       </div>
+    </div>
 
 
-            <!---------------------------------SECTION 4--------------------------------------->
-            <div class="container-fluid bg-warning py-4">
-              <div class="container text-white">
-                <div class="row">
-                  <div class="col-12 col-md-7 d-flex flex-column justify-content-center pe-5 order-2 order-md-1">
-                    <h2 class="my-4">¿Qué framework es mas popular?</h2>
-                    <p>En las comparativas de uso de frameworks provistas por npm trends (el gestor de paquetes mas usado en el desarrollo web) se ve una amplia elección por parte de los desarrolladores con React, encabezando el podio de los frameworks más usados</p>
-                  </div>
-                  <div class="col-12 col-md-5 order-1 order-md-2">
-                    <img class="img-fluid" src="./img/img-section-4.png" alt="img-section-2">
-                  </div>
-                </div>
-              </div>
-            </div>
+    <!---------------------------------SECTION 4--------------------------------------->
+    <div id="popularidad" class="container-fluid bg-warning py-4">
+      <div class="container text-white">
+        <div class="row">
+          <div class="col-12 col-md-7 d-flex flex-column justify-content-center pe-5 order-2 order-md-1">
+            <h2 class="my-4">¿Qué framework es mas popular?</h2>
+            <p>En las comparativas de uso de frameworks provistas por npm trends (el gestor de paquetes mas usado en el desarrollo web) se ve una amplia elección por parte de los desarrolladores con React, encabezando el podio de los frameworks más usados</p>
+          </div>
+          <div class="col-12 col-md-5 order-1 order-md-2">
+            <img class="img-fluid" src="./img/img-section-4.png" alt="img-section-2">
+          </div>
+        </div>
+      </div>
+    </div>
 
+
+
+    <!---------------------------------FOOTER--------------------------------------->
+    <div class="container-fluid bg-primary  py-4">
+      <div class="container text-white d-flex justify-content-between">
+        <div class="legal">© 2022 Facundo Angel</div>
+        <div class="social-media">
+          <a href="http://github.com/facundoangel" target="_blank" class="text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
 
 
 
