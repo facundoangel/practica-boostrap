@@ -3,4 +3,10 @@
   height: 150px;
   background-color: #767676;
 }
+
+@media screen and (max-width: 1063px) {
+  .carousel {
+    margin-top: 65px !important;
+  }
+}
 /*# sourceMappingURL=custom.css.map */
